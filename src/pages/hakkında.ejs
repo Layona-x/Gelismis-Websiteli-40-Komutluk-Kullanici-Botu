@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width-device-width, initial-scale=1, maximum-scale=1">
-    <meta name="title" content="Zuzia">
+    <meta name="title" content="Zuzia - Hakkında">
     <meta content="Zuzia Gelişmiş Komutları İle İnovasyon Yaratmaya Gelen Türkçe Discord Botu!" name="description">
 <meta name="author" content="Zuzia RodzeN">
 <meta name="theme-color" content="#303136">
@@ -18,9 +18,9 @@
 <meta content="" name="keywords">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="https://cdn.discordapp.com/avatars/924363100608675892/ab374ee94aa399554b7b42c50bbf79fa.webp?size=2048" sizes="25x25">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <title>Zuzia - Anasayfa</title>
+    <title>Zuzia - Hakkında</title>
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
@@ -32,9 +32,9 @@
 <style>
 
   body{
+  color: #fff;
   background: #111;
   min-height: 100vh;
-  font-family: monospace;
 
 }
 *{
@@ -43,13 +43,12 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 /* ---------- BOTLA ALAKALI KODLAR --------- */
-@media only screen and (min-width: 750px){
+/*@media only screen and (min-width: 750px){*/
   .nav{
   position: fixed;
   height: 8vh;
   width: 100%;
-  background-color: #33333365;/*knk dcden bişi yazdım gödünmü*/
- 
+  background-color: #33333365;
   font-family: 'Poppins', sans-serif;
   display: flex;
   align-items: center;
@@ -110,68 +109,52 @@
         color: #b3cbff;
       }
     }
-.bot img{
-width: 400px;
-margin-bottom: 50%;
-max-width: 100%;
-height: 350px;
-}
-.bot{
-  border-radius: 15px;
-  float:left;
-  width: 450px;
-  padding: 75px;
-  text-align: center;
-  margin: 35px;
+ .gelistirici{
+  background-color: #1D1F21;/*#303136;*/
+  padding-left: 40px;
+  font-family: Verdana;
+  color: #fff;
+  margin:20px;
   margin-top: 5%;
-  color: #fff;
-  font-family: monospace;
-  position: unset;
-  top: -15px;
-}
-#ne{
-  position: relative;
-  top: -150px;
-}
-
-.bot h1{
-  width: 300px;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-size: 60px;
-  letter-spacing: 4px;
-  font-weight: 300;
-  font-family: monospace;
-  margin-bottom: 5%;
-  transition: 0.8s;
-  color: #fff;
-}
-.bot h1:hover{
-  color: #fff;
-  letter-spacing: 7px;
-  animation: zuzia 4s 1;
-}
-@keyframes zuzia {
-  0%{
-    color: #fff;
-  }
-  25%{
-    color: #ffdbfe;
-  }
-  50%{
-    color: #d2bcff;
-  }
-  75%{
-    color: #b3cbff;
-  }
-  }
-
-.bot p{
-  font-size: 22.5px;
+  border-radius: 15px;
+  height: 200px;
+ }
+ .gelistirici img {
+ height:80px;
+ width:80px;
+ border-radius: 50%;
+ border-style: dotted;
+ border-width: 3px;
+ padding: 5px;
+ position: relative;
+ left: -30px;
+ top: 10px;
+ }
+ .gelistirici p{
+    border-style: solid;
+    border-width:1px;
+    border-color: #1D1F21;
+    width: 80%;
+    height: 100px;
+    margin: 20px;
+    position: relative;
+    right: -70px;
+    top: -60px;
+ }
+ .gelistirici h4 {
+   width: auto;
+  font-size: 15px;
   letter-spacing: 1px;
   font-weight: 100;
-  font-family: monospace;
-}
+  font-family: Verdana;
+  color: #fff;
+  position: relative;
+  left: 0px;
+  top: -50px;
+ }
+
+
+
 }
 body::-webkit-scrollbar {
   width: 15px;
@@ -203,26 +186,7 @@ body::-webkit-scrollbar-thumb:hover {
     color: #949494;
   }
   }
-.buton{
-  margin-left: 7px;
-  margin-top: 6px;
-  border-radius: 6px;
-  width: 180px;
-  height: 60px;
-  border: 2px solid #fff;
-  color: #fff;
-  font-family: monospace;
-  font-size: 30px;
-  padding:6px;
-  background-color: #22222222;
-  text-decoration: none;
-  transition: 0.8s;
-}
-.buton:hover {
-  background: #ffffff11;
-  text-decoration: none;
-  color: #b678ff;
-}
+
 .bilgi{
   border-radius: 15px;
   float: left;
@@ -232,14 +196,14 @@ body::-webkit-scrollbar-thumb:hover {
   margin: 40px;
   margin-top: 5%;
   color: #fff;
-  font-family: monospace;
+ 
 }
 .bilgi h1{
   text-transform: uppercase;
   font-size: 38px;
   letter-spacing: 1px;
   font-weight: 200;
-  font-family: monospace;
+ 
   margin-bottom: 5%;
 }
 .bilgi p{
@@ -247,7 +211,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 25px;
   letter-spacing: 1px;
   font-weight: 200;
-  font-family: monospace;
+
   margin-bottom: 5%;
 }
 
@@ -277,18 +241,18 @@ color: #fff;
 #alt-menu .a{
   color: #fff;
   text-decoration: none;
-  font-family: monospace;
+
 }
 #alt-menu p{
 font-size: 15px;
 margin-top: 20px;
 font-weight: 300;
-font-family: monospace;
+
 } 
 
 .zuzi{
 color: #b5b5b5;
-font-family: monospace;
+
 }
 .rodzi{
   color: #ffdbfe
@@ -312,10 +276,7 @@ font-family: monospace;
   flex-direction: row;
   justify-content: space-around;
   }
-  .bot{
-    text-align:center;
-    top: 50px; 
-  }
+
 
   .nav h2{
     bottom: 15px;
@@ -348,7 +309,6 @@ font-family: monospace;
   color: #fff;
   letter-spacing: 1px;
   text-decoration: none;
-  font-weight: bold;
   transition: 0.8s;
   }
 
@@ -384,13 +344,13 @@ font-family: monospace;
   #alt-menu .a{
     color: #fff;
     text-decoration: none;
-    font-family: monospace;
+   
   }
   #alt-menu p{
     font-size: 15px;
     margin-top: 20px;
     font-weight: 300;
-    font-family: monospace;
+   
   }
   #ne{
     color: white;
@@ -400,60 +360,23 @@ font-family: monospace;
     top: 20px;
   }
 
-  .bot img{
-    width: 350px;
-    margin-bottom: 50%;
-    max-width: 100%;
-    height: 350px;
-  }
-  .bot{
-    border-radius: 15px;
-    width: 300px;
-    margin-top: 80px;
-    margin-bottom: 15px;
-    color: #fff;
-    font-family: monospace;
-   -
-  }
-  .bot h1{
-    cursor: pointer;
-    text-transform: uppercase;
-    font-size: 60px;
-    letter-spacing: 4px;
-    font-weight: 300;
-    font-family: monospace;
-    margin-bottom: 5%;
-    transition: 0.8s;
-    color: #fff;
-  }
-  .bot h1:hover{
-    color: #fff;
-    letter-spacing: 7px;
-    animation: zuzia 4s 1;
-  }
-  @keyframes zuzia {
-    0%{
-      color: #fff;
-    }
-    25%{
-      color: #ffdbfe;
-    }
-    50%{
-      color: #d2bcff;
-    }
-    75%{
-      color: #b3cbff;
-    }
-    }
-
-  .bot p{
-    font-size: 22.5px;
-    letter-spacing: 1px;
-    font-weight: 100;
-    font-family: monospace;
-  }
+}
+  body::-webkit-scrollbar {
+  width: 15px;
 }
 
+body::-webkit-scrollbar-track {
+background: #222222;
+}
+
+body::-webkit-scrollbar-thumb {
+   background: linear-gradient(to bottom, #fff, #fff);
+  border-radius: 20px;
+  transition: 0.8s;
+}
+body::-webkit-scrollbar-thumb:hover {
+   animation: scroll 4s 1;
+}
 
 </style>
 </head>
@@ -468,28 +391,30 @@ font-family: monospace;
           <a href="/destek">Destek</a>
         </nav>
       <div id="sayfa" class="container">
-      <div class="row">
-        <br>
-        <center>
       
-        <div class="bot">
-          <h1>Zuzia</h1>
-          <p>Zuzia'nın gelişmiş moderasyon sistemleri ve invite, ticket, kayıt gibi bir çok sistemle sunucunuzu yönetin.</p><br><br>
-          <a href="/davet" class="buton">Hemen Dene</a>
-        </div><br><br>
-        <div class="bot">
-          <img src="https://cdn.discordapp.com/attachments/890633245597786133/935853886579826688/zuzia.png">
-        </div>
-        </center>
-    
-         <div id="ne" class="col-sm-4" class="bilgi">
+        <br><br><br><br><br>
+      <div class="row">    
+        <div class="gelistirici col-sm-5">
+          <div class="img">
+            <img src="<%= botAvatar; %>" style="border-color: #BDAAF9;">
+          </div>
+          <div class="isim">
+            <p><%= ownerTag; %> ( Bot ve Site Geliştiricisi )</p>
+          </div>
+          <div class="drm">
+            <h4><%= ownerStatus; %></h4>
+          </div>
+          </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <div id="ne" class="col-sm-4" class="bilgi">
         <h1>Sunucu</h1>
         <p><span data-purecounter-start="0" data-purecounter-end="<%= sunucu %>" data-purecounter-duration="1" class="purecounter"></span>+</p>
-        </div><br>
+        </div>
         <div id="ne" class="col-sm-4" class="bilgi">
         <h1>Kullanıcı</h1>
         <p><span data-purecounter-start="0" data-purecounter-end="<%= uye %>" data-purecounter-duration="1" class="purecounter"></span>+</p>
-        </div><br>        
+        </div>       
         <div id="ne" class="col-sm-4" class="bilgi">
        
         <h1>Kanal</h1>
@@ -504,12 +429,12 @@ font-family: monospace;
         <br>
           <p><a href="/#" class="a">Anasayfa</a> | <a href="/hakkında" class="a">Hakkında</a></b></p><br>
 
-          <p>© Telif Hakkı Zuzia. Tüm Haklar Saklıdır <span class="zuzi"><b>2021-</b><b id="yil"></span></p><br>
-          <p>Site Yapımcısı : <span class="rodzi">Zuzia RodzeN</span></p>
+          <p>© Telif Hakkı Zuzia. Tüm Haklar Saklıdır.<span class="zuzi"><b>2021-</b><b id="yil"></span></p><br>
+          
 
       </div>
   </footer>
-  </div>
+
 </div>
 
 
